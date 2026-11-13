@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSENAI - Loja de Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 01. HEADER E MENU -->
+    <header id="inicio">
+        <div class="logo">
+            <h1>Tech<span>SENAI</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 02. CARROSSEL E BANNERS -->
+    <section class="carrossel">
+        <div class="slides-container" id="slidesContainer">
+            <!-- Banner 1 -->
+            <div class="slide">
+                <img class="banner-bg" src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Setup Tecnologia">
+                <div class="banner-overlay"></div>
+                <div class="banner-conteudo">
+                    <h2>Tecnologia para o seu dia a dia</h2>
+                    <p>Os melhores notebooks e setups de alto desempenho com preços imperdíveis.</p>
+                    <a href="#produtos" class="btn-acao">Ver Produtos</a>
+                </div>
+            </div>
+            <!-- Banner 2 -->
+            <div class="slide">
+                <img class="banner-bg" src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Setup Gamer">
+                <div class="banner-overlay"></div>
+                <div class="banner-conteudo">
+                    <h2>Periféricos Gamer de Alta Precisão</h2>
+                    <p>Eleve o nível do seu jogo com teclados mecânicos, mouses e headsets RGB.</p>
+                    <a href="#produtos" class="btn-acao">Conferir Ofertas</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões de Navegação do Carrossel -->
+        <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- 03. CARDS INFORMATIVOS -->
+    <section class="cards-informativos">
+        <div class="card-info">
+            <h3>🚚 Entrega Rápida</h3>
+            <p>Receba seus produtos com segurança e rapidez em todo o estado.</p>
+        </div>
+        <div class="card-info">
+            <h3>💬 Atendimento 24h</h3>
+            <p>Suporte especializado pronto para tirar todas as suas dúvidas.</p>
+        </div>
+        <div class="card-info">
+            <h3>⚡ Grande Variedade</h3>
+            <p>As melhores marcas e lançamentos de tecnologia em um só lugar.</p>
+        </div>
+    </section>
+
+    <!-- 04. CARDS DE PRODUTOS -->
+    <section id="produtos" class="secao-produtos">
+        <h2 class="titulo-secao">Nossos Destaques</h2>
+        <div class="grid-produtos">
+            <div class="card-produto">
+                <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" alt="Notebook Gamer">
+                <h3>Notebook Gamer Pro</h3>
+                <p>Processador de última geração, 16GB RAM e SSD 512GB.</p>
+                <span class="preco">R$ 4.899,00</span>
+                <a href="#contato" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="card-produto">
+                <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Headset Gamer">
+                <h3>Headset RGB 7.1</h3>
+                <p>Som estéreo imersivo com microfone com cancelamento de ruído.</p>
+                <span class="preco">R$ 299,00</span>
+                <a href="#contato" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="card-produto">
+                <img src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Teclado Mecânico">
+                <h3>Teclado Mecânico RGB</h3>
+                <p>Switches mecânicos de alta durabilidade e iluminação customizável.</p>
+                <span class="preco">R$ 349,00</span>
+                <a href="#contato" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="card-produto">
+                <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mouse Gamer">
+                <h3>Mouse Gamer 16000 DPI</h3>
+                <p>Sensor óptico de alta precisão e botões laterais programáveis.</p>
+                <span class="preco">R$ 199,00</span>
+                <a href="#contato" class="btn-comprar">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 05. SEÇÃO SOBRE -->
+    <section id="sobre" class="secao-sobre">
+        <div class="sobre-container">
+            <div class="sobre-texto">
+                <h2>Sobre a TechSENAI</h2>
+                <p>Fundada com a missão de aproximar a alta tecnologia de estudantes e profissionais, a TechSENAI oferece equipamentos de ponta com excelência, garantia e suporte dedicado. Transformamos inovação em acessibilidade para o seu dia a dia.</p>
+            </div>
+            <div class="sobre-imagem">
+                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Equipe TechSENAI">
+            </div>
+        </div>
+    </section>
+
+    <!-- 06. VÍDEO DO YOUTUBE -->
+    <section id="video" class="secao-video">
+        <h2 class="titulo-secao">Conheça a TechSENAI</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/N6h4FIr3-Sk?si=9GgC4NoEzMFw0YH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- 07. CONTATO -->
+    <section id="contato" class="secao-contato">
+        <h2 class="titulo-secao">Entre em Contato</h2>
+        <div class="contato-info">
+            <p><strong>E-mail:</strong> contato@techsenai.com</p>
+            <p><strong>Cidade:</strong> Belo Horizonte - MG</p>
+            <p><strong>WhatsApp:</strong> (31) 99999-9999</p>
+        </div>
+    </section>
+
+    <!-- 08. FOOTER -->
+    <footer>
+        <div class="footer-conteudo">
+            <p>&copy; 2026 TechSENAI. Todos os direitos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script do Carrossel -->
+    <script>
+        let slideAtual = 0;
+        const container = document.getElementById('slidesContainer');
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        function mudarSlide(direcao) {
+            slideAtual = (slideAtual + direcao + totalSlides) % totalSlides;
+            container.style.transform = `translateX(-${slideAtual * 100}%)`;
+        }
+
+        setInterval(() => mudarSlide(1), 5000);
+    </script>
+
+</body>
+</html>
