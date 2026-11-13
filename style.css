@@ -27,7 +27,7 @@ header {
     z-index: 1000;
 }
 
-.logo h1 {
+.logo h1, .logo h2 {
     font-size: 24px;
     color: #ffffff;
 }
@@ -123,9 +123,12 @@ nav ul li a:hover {
     background-color: #ff5500;
     color: #ffffff;
     padding: 12px 30px;
+    border: none;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
     transition: background 0.3s;
 }
 
@@ -327,31 +330,68 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-/* 07. Contato */
+/* 07. Contato e Formulário */
 .secao-contato {
     background-color: #181818;
     padding: 60px 20px;
     text-align: center;
 }
 
+.contato-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .contato-info p {
     font-size: 16px;
     color: #cccccc;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #222222;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 4px solid #ff5500;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #141414;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    border-color: #ff5500;
 }
 
 /* 08. Footer */
 footer {
     background-color: #0d0d0d;
-    padding: 30px 20px;
+    padding: 40px 20px;
     text-align: center;
     border-top: 1px solid #222222;
 }
 
-.footer-conteudo p {
-    color: #888888;
-    font-size: 14px;
-    margin-bottom: 15px;
+.footer-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .footer-links {
@@ -359,6 +399,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .footer-links li a {
@@ -370,4 +411,33 @@ footer {
 
 .footer-links li a:hover {
     color: #ff5500;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    transition: all 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    background-color: #ff5500;
+    border-color: #ff5500;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    color: #777777;
+    font-size: 13px;
 }

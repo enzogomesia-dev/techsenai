@@ -129,27 +129,66 @@
     <!-- 07. CONTATO -->
     <section id="contato" class="secao-contato">
         <h2 class="titulo-secao">Entre em Contato</h2>
-        <div class="contato-info">
-            <p><strong>E-mail:</strong> contato@techsenai.com</p>
-            <p><strong>Cidade:</strong> Belo Horizonte - MG</p>
-            <p><strong>WhatsApp:</strong> (31) 99999-9999</p>
+        <div class="contato-container">
+            <div class="contato-info">
+                <p><strong>E-mail:</strong> contato@techsenai.com</p>
+                <p><strong>Cidade:</strong> Muriaé - MG</p>
+                <p><strong>WhatsApp:</strong> (32) 99999-9999</p>
+            </div>
+
+            <form class="form-contato" onsubmit="enviarMensagem(event)">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <textarea rows="4" placeholder="Escreva sua mensagem para a empresa..." required></textarea>
+                <button type="submit" class="btn-acao">Enviar Mensagem</button>
+            </form>
         </div>
     </section>
 
     <!-- 08. FOOTER -->
     <footer>
         <div class="footer-conteudo">
-            <p>&copy; 2026 TechSENAI. Todos os direitos reservados.</p>
+            <div class="logo footer-logo">
+                <h2>Tech<span>SENAI</span></h2>
+            </div>
+
             <ul class="footer-links">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#video">Vídeo</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+
+            <div class="redes-sociais">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" title="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <!-- YouTube -->
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube" title="YouTube">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
+                </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" title="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <p class="copyright">&copy; 2026 TechSENAI. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Script do Carrossel -->
+    <!-- Script do Carrossel e Formulário -->
     <script>
         let slideAtual = 0;
         const container = document.getElementById('slidesContainer');
@@ -161,6 +200,12 @@
         }
 
         setInterval(() => mudarSlide(1), 5000);
+
+        function enviarMensagem(event) {
+            event.preventDefault();
+            alert('Mensagem enviada com sucesso! A equipe TechSENAI agradece o contato.');
+            event.target.reset();
+        }
     </script>
 
 </body>
